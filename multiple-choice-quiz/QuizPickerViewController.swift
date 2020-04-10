@@ -71,4 +71,6 @@ class QuizPickerViewController: UIViewController {
             }
         }
     }
+
+    @IBAction func unwindToQuizPicker(unwindSegue: UIStoryboardSegue) {}
 }

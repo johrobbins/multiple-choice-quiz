@@ -17,6 +17,7 @@
 		FF69B7EE243CA28F005A1A15 /* QuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69B7ED243CA28F005A1A15 /* QuizData.swift */; };
 		FF69B7F0243DDCEF005A1A15 /* GameOfThrones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69B7EF243DDCEF005A1A15 /* GameOfThrones.swift */; };
 		FF7CA1BC244096DE00D853A6 /* MovieNight.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CA1BB244096DE00D853A6 /* MovieNight.swift */; };
+		FF7CA1BE2440A9E800D853A6 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CA1BD2440A9E800D853A6 /* ResultsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		FF69B7ED243CA28F005A1A15 /* QuizData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizData.swift; sourceTree = "<group>"; };
 		FF69B7EF243DDCEF005A1A15 /* GameOfThrones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThrones.swift; sourceTree = "<group>"; };
 		FF7CA1BB244096DE00D853A6 /* MovieNight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNight.swift; sourceTree = "<group>"; };
+		FF7CA1BD2440A9E800D853A6 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 				FF53FF2A243C3E92007BE3FE /* AppDelegate.swift */,
 				FF53FF2C243C3E92007BE3FE /* SceneDelegate.swift */,
 				FF53FF2E243C3E92007BE3FE /* QuizPickerViewController.swift */,
+				FF7CA1BD2440A9E800D853A6 /* ResultsViewController.swift */,
 				FF69B7EB243CA20B005A1A15 /* QuestionViewController.swift */,
 				FF53FF30243C3E92007BE3FE /* Main.storyboard */,
 				FF69B7ED243CA28F005A1A15 /* QuizData.swift */,
@@ -165,6 +168,7 @@
 				FF69B7EE243CA28F005A1A15 /* QuizData.swift in Sources */,
 				FF69B7EC243CA20B005A1A15 /* QuestionViewController.swift in Sources */,
 				FF53FF2D243C3E92007BE3FE /* SceneDelegate.swift in Sources */,
+				FF7CA1BE2440A9E800D853A6 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
