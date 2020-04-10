@@ -11,51 +11,52 @@ import UIKit
 class QuestionViewController: UIViewController {
 
     @IBOutlet private var questionLabel: UILabel!
-    @IBOutlet private var answerButton1: UIButton!
-    @IBOutlet private var answerButton2: UIButton!
-    @IBOutlet private var answerButton3: UIButton!
-    @IBOutlet private var answerButton4: UIButton!
+    @IBOutlet var answerButtons: Array<UIButton>!
+    @IBOutlet private var quizProgressView: UIProgressView!
 
     public var questions = [Question]()
 
+    private var questionIndex = 0;
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        //updateUI()
-        // Do any additional setup after loading the view.
-        answerButton1.setTitle(questions[0].answers[1].text, for: .normal)
+        questions.shuffle()
+        updateUI()
     }
 
     func updateUI() {
-        let currentQuestion = questions[0]
+        navigationItem.title = "Question #\(questionIndex + 1)"
+
+        let currentQuestion = questions[questionIndex]
+        var currentAnswers = currentQuestion.answers
+        let quizProgress = Float(questionIndex) / Float(questions.count)
+
         questionLabel.text = currentQuestion.text
-        updateQuestionAnswers(using: currentQuestion.answers)
+
+        currentAnswers.shuffle()
+        for(index, button) in answerButtons.enumerated() {
+            if index < currentAnswers.count {
+                button.setTitle(currentAnswers[index].text, for: .normal)
+                button.isHidden = false
+            } else {
+                button.isHidden = true
+            }
+        }
+
+        quizProgressView.setProgress(quizProgress, animated: true)
     }
 
-    func updateQuestionAnswers(using answers: [Answer]) {
-        answerButton1.setTitle(answers[0].text, for: .normal)
-        answerButton2.setTitle(answers[1].text, for: .normal)
-        answerButton3.setTitle(answers[2].text, for: .normal)
-        answerButton4.setTitle(answers[3].text, for: .normal)
+    @IBAction func answerButtonTapped(_ sender: UIButton) {
+        nextQuestion()
     }
 
-//    var questions: [Question] = [
-//        Question(text: "What temperature do you prefer most?",
-//            answers: [
-//                Answer(text: "Tropical"),
-//                Answer(text: "Temperate"),
-//                Answer(text: "Cold"),
-//                Answer(text: "Dry")
-//        ])
-//    ]
+    func nextQuestion() {
+        questionIndex += 1
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if questionIndex < questions.count {
+            updateUI()
+        } else {
+            performSegue(withIdentifier: "ShowResults", sender: nil)
+        }
     }
-    */
-
 }
