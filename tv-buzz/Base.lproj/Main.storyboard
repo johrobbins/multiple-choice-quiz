@@ -55,11 +55,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Amu-yV-ajk" userLabel="Answer Stack View">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Amu-yV-ajk" userLabel="Answer Stack View">
                                 <rect key="frame" x="30" y="170" width="354" height="540"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfJ-da-muI" userLabel="Option1">
                                         <rect key="frame" x="64.5" y="0.0" width="225" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="65" id="YS6-oq-AIc"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Action" backgroundImage="button-outline">
                                             <color key="titleColor" name="text"/>
@@ -70,6 +73,9 @@
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGN-yv-aSs" userLabel="Option2">
                                         <rect key="frame" x="64.5" y="95" width="225" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="65" id="NtM-dh-QlY"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Romance" backgroundImage="button-outline">
                                             <color key="titleColor" name="text"/>
@@ -80,6 +86,9 @@
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeS-uF-T33" userLabel="Option3">
                                         <rect key="frame" x="64.5" y="190" width="225" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="65" id="mEz-Wt-5ov"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Science Fiction" backgroundImage="button-outline">
                                             <color key="titleColor" name="text"/>
@@ -90,6 +99,9 @@
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcA-OX-eaI" userLabel="Option4">
                                         <rect key="frame" x="64.5" y="285" width="225" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="65" id="aR3-2F-nxa"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Drama" backgroundImage="button-outline">
                                             <color key="titleColor" name="text"/>
@@ -100,6 +112,9 @@
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffQ-dB-66h" userLabel="Option5">
                                         <rect key="frame" x="64.5" y="380" width="225" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="65" id="eOv-nT-z3F"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Comedy" backgroundImage="button-outline">
                                             <color key="titleColor" name="text"/>
@@ -110,6 +125,9 @@
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aM-WB-oHx" userLabel="Option6">
                                         <rect key="frame" x="64.5" y="475" width="225" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="65" id="olM-Rg-XAE"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Horror" backgroundImage="button-outline">
                                             <color key="titleColor" name="text"/>
@@ -119,6 +137,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <variation key="heightClass=regular-widthClass=regular" distribution="fillProportionally"/>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What movie genre would you most like to watch right now?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qWW-vr-h0e">
                                 <rect key="frame" x="30" y="0.0" width="354" height="150"/>
@@ -145,6 +164,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="UXM-mX-ktd" secondAttribute="trailing" constant="16" id="ra6-My-L2U"/>
                             <constraint firstItem="zfY-hJ-Vpk" firstAttribute="trailing" secondItem="qWW-vr-h0e" secondAttribute="trailing" constant="30" id="rgj-n4-MIX"/>
                             <constraint firstItem="UXM-mX-ktd" firstAttribute="leading" secondItem="Ggq-8y-OK3" secondAttribute="leadingMargin" constant="16" id="s0g-vm-b5h"/>
+                            <constraint firstItem="UXM-mX-ktd" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Amu-yV-ajk" secondAttribute="bottom" constant="35" id="the-5k-mGJ"/>
                             <constraint firstItem="zfY-hJ-Vpk" firstAttribute="bottom" secondItem="UXM-mX-ktd" secondAttribute="bottom" constant="20" id="zLl-ra-kih"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zfY-hJ-Vpk"/>
@@ -177,23 +197,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avatar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ea3-nd-f1D" userLabel="TitleLabel">
-                                <rect key="frame" x="35" y="490" width="344" height="26"/>
+                                <rect key="frame" x="35" y="488" width="344" height="26"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Va4-LB-clr" userLabel="DescriptionLabel">
-                                <rect key="frame" x="35" y="536" width="344" height="119.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" minimumScaleFactor="0.20000000000000001" translatesAutoresizingMaskIntoConstraints="NO" id="Va4-LB-clr" userLabel="DescriptionLabel">
+                                <rect key="frame" x="35" y="534" width="344" height="119.5"/>
                                 <string key="text">A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" name="text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="JLG-de-P9b" userLabel="ImageView">
-                                <rect key="frame" x="35" y="35" width="344" height="420"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="420" id="8Y1-pP-CdM"/>
-                                </constraints>
+                                <rect key="frame" x="35" y="35" width="344" height="418"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" name="background"/>
@@ -204,6 +222,7 @@
                             <constraint firstItem="Yac-fa-Jp1" firstAttribute="trailing" secondItem="JLG-de-P9b" secondAttribute="trailing" constant="35" id="LvD-vy-DIv"/>
                             <constraint firstItem="JLG-de-P9b" firstAttribute="centerX" secondItem="gsi-qb-uSA" secondAttribute="centerX" id="R4k-o1-8hD"/>
                             <constraint firstItem="Ea3-nd-f1D" firstAttribute="leading" secondItem="Yac-fa-Jp1" secondAttribute="leading" constant="35" id="asV-Ng-Zv7"/>
+                            <constraint firstItem="JLG-de-P9b" firstAttribute="centerY" secondItem="gsi-qb-uSA" secondAttribute="centerY" constant="-160" id="bUd-JD-Ymt"/>
                             <constraint firstItem="JLG-de-P9b" firstAttribute="leading" secondItem="Yac-fa-Jp1" secondAttribute="leading" constant="35" id="cZd-0r-t5z"/>
                             <constraint firstItem="Ea3-nd-f1D" firstAttribute="top" secondItem="JLG-de-P9b" secondAttribute="bottom" constant="35" id="o71-Ba-tHX"/>
                             <constraint firstItem="JLG-de-P9b" firstAttribute="top" secondItem="gsi-qb-uSA" secondAttribute="top" constant="35" id="tge-VJ-XXq"/>
