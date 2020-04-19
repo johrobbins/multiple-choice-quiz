@@ -1,7 +1,4 @@
 //
-//  ViewController.swift
-//  multiple-choice-quiz
-//
 //  Created by Joh Robbins on 7/4/20.
 //  Copyright © 2020 Joh Robbins. All rights reserved.
 //
@@ -11,7 +8,7 @@ import UIKit
 class QuizPickerViewController: UIViewController {
     @IBOutlet private var quizStackView: UIStackView!
 
-    private let quizzes = [MovieNight().quiz]
+    private let quizzes = [MovieNight().quiz, GameOfThrones().quiz]
 
     override var preferredStatusBarStyle: UIStatusBarStyle {
       return .lightContent

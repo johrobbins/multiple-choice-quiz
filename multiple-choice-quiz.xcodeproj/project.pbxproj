@@ -15,9 +15,9 @@
 		FF53FF37243C3E95007BE3FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF53FF35243C3E95007BE3FE /* LaunchScreen.storyboard */; };
 		FF69B7EC243CA20B005A1A15 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69B7EB243CA20B005A1A15 /* QuestionViewController.swift */; };
 		FF69B7EE243CA28F005A1A15 /* QuizData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69B7ED243CA28F005A1A15 /* QuizData.swift */; };
-		FF69B7F0243DDCEF005A1A15 /* GameOfThrones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF69B7EF243DDCEF005A1A15 /* GameOfThrones.swift */; };
 		FF7CA1BC244096DE00D853A6 /* MovieNight.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CA1BB244096DE00D853A6 /* MovieNight.swift */; };
 		FF7CA1BE2440A9E800D853A6 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CA1BD2440A9E800D853A6 /* ResultsViewController.swift */; };
+		FF7CA1E1244C782C00D853A6 /* GameOfThrones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7CA1E0244C782C00D853A6 /* GameOfThrones.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		FF53FF38243C3E95007BE3FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF69B7EB243CA20B005A1A15 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		FF69B7ED243CA28F005A1A15 /* QuizData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizData.swift; sourceTree = "<group>"; };
-		FF69B7EF243DDCEF005A1A15 /* GameOfThrones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThrones.swift; sourceTree = "<group>"; };
 		FF7CA1BB244096DE00D853A6 /* MovieNight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieNight.swift; sourceTree = "<group>"; };
 		FF7CA1BD2440A9E800D853A6 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		FF7CA1E0244C782C00D853A6 /* GameOfThrones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThrones.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +84,8 @@
 		FF69B7F1243F4D15005A1A15 /* Quizzes */ = {
 			isa = PBXGroup;
 			children = (
-				FF69B7EF243DDCEF005A1A15 /* GameOfThrones.swift */,
 				FF7CA1BB244096DE00D853A6 /* MovieNight.swift */,
+				FF7CA1E0244C782C00D853A6 /* GameOfThrones.swift */,
 			);
 			path = Quizzes;
 			sourceTree = "<group>";
@@ -163,12 +163,12 @@
 			files = (
 				FF7CA1BC244096DE00D853A6 /* MovieNight.swift in Sources */,
 				FF53FF2F243C3E92007BE3FE /* QuizPickerViewController.swift in Sources */,
-				FF69B7F0243DDCEF005A1A15 /* GameOfThrones.swift in Sources */,
 				FF53FF2B243C3E92007BE3FE /* AppDelegate.swift in Sources */,
 				FF69B7EE243CA28F005A1A15 /* QuizData.swift in Sources */,
 				FF69B7EC243CA20B005A1A15 /* QuestionViewController.swift in Sources */,
 				FF53FF2D243C3E92007BE3FE /* SceneDelegate.swift in Sources */,
 				FF7CA1BE2440A9E800D853A6 /* ResultsViewController.swift in Sources */,
+				FF7CA1E1244C782C00D853A6 /* GameOfThrones.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
