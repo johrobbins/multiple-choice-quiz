@@ -11,12 +11,12 @@ import UIKit
 class QuizPickerViewController: UIViewController {
     @IBOutlet private var quizStackView: UIStackView!
 
-    private let quizzes = [GameOfThronesQuiz().quiz]
+    private let quizzes = [MovieNight().quiz]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Add each quiz to the stack view
+        // add each quiz to the stack view
         for (index, quiz) in quizzes.enumerated() {
             quizStackView.addArrangedSubview(createQuizView(quizDescription: quiz.description, quizID: index))
         }
@@ -26,7 +26,7 @@ class QuizPickerViewController: UIViewController {
         let titleLabel = UILabel()
         titleLabel.text = quizDescription
         titleLabel.font = UIFont(name: "Georgia", size: 28)
-        titleLabel.textColor = .black
+        titleLabel.textColor = UIColor(named: "text")
         titleLabel.textAlignment = .center
         titleLabel.widthAnchor.constraint(equalToConstant: self.view.frame.width).isActive = true
         titleLabel.numberOfLines = 0
@@ -35,7 +35,7 @@ class QuizPickerViewController: UIViewController {
         let startButton = UIButton()
         startButton.setTitle("Start", for: .normal)
         startButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
-        startButton.setTitleColor(UIColor.darkGray, for: .normal)
+        startButton.setTitleColor(UIColor(named: "text"), for: .normal)
         startButton.setBackgroundImage(UIImage(named: "button-outline"), for: .normal)
         startButton.addTarget(self, action: #selector(self.buttonTapped), for: .touchUpInside)
         startButton.tag = quizID
