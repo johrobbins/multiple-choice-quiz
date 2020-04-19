@@ -1,7 +1,4 @@
 //
-//  AppDelegate.swift
-//  multiple-choice-quiz
-//
 //  Created by Joh Robbins on 7/4/20.
 //  Copyright © 2020 Joh Robbins. All rights reserved.
 //

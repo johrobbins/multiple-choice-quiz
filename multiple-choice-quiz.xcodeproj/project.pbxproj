@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FF53FF27243C3E92007BE3FE /* TV Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF53FF27243C3E92007BE3FE /* TV Buzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV Buzz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF53FF2A243C3E92007BE3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF53FF2C243C3E92007BE3FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF53FF2E243C3E92007BE3FE /* QuizPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPickerViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		FF53FF28243C3E92007BE3FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF53FF27243C3E92007BE3FE /* TV Quiz.app */,
+				FF53FF27243C3E92007BE3FE /* TV Buzz.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,7 +107,7 @@
 			);
 			name = "multiple-choice-quiz";
 			productName = "multiple-choice-quiz";
-			productReference = FF53FF27243C3E92007BE3FE /* TV Quiz.app */;
+			productReference = FF53FF27243C3E92007BE3FE /* TV Buzz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -320,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.johrobbins.multiple-choice-quiz";
-				PRODUCT_NAME = "TV Quiz";
+				PRODUCT_NAME = "TV Buzz";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.johrobbins.multiple-choice-quiz";
-				PRODUCT_NAME = "TV Quiz";
+				PRODUCT_NAME = "TV Buzz";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
