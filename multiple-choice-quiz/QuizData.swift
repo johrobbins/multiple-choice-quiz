@@ -6,11 +6,10 @@
 //  Copyright © 2020 Joh Robbins. All rights reserved.
 //
 
-import Foundation
-
 struct Quiz {
     var description: String
     var questions: [Question]
+    var results: [Result]
 }
 
 struct Question {
@@ -20,5 +19,11 @@ struct Question {
 
 struct Answer {
     var text: String
-    var type: Any
+    var type: String
+}
+
+struct Result {
+    var name: String
+    var imageID: String
+    var description: String
 }
