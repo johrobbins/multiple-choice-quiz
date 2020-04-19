@@ -37,7 +37,7 @@ class QuizPickerViewController: UIViewController {
         startButton.titleLabel?.font = UIFont.systemFont(ofSize: 18)
         startButton.setTitleColor(UIColor(named: "text"), for: .normal)
         startButton.setBackgroundImage(UIImage(named: "button-outline"), for: .normal)
-        startButton.addTarget(self, action: #selector(self.buttonTapped), for: .touchUpInside)
+        startButton.addTarget(self, action: #selector(self.startButtonTapped), for: .touchUpInside)
         startButton.tag = quizID
         startButton.widthAnchor.constraint(equalToConstant: 175).isActive = true
         startButton.heightAnchor.constraint(equalToConstant: 50).isActive = true
@@ -54,7 +54,7 @@ class QuizPickerViewController: UIViewController {
         return stackView
     }
 
-    @objc func buttonTapped(sender : UIButton) {
+    @objc func startButtonTapped(sender : UIButton) {
         performSegue(withIdentifier: "StartQuiz", sender: sender.tag)
     }
 
@@ -67,6 +67,7 @@ class QuizPickerViewController: UIViewController {
             if let navController = segue.destination as? UINavigationController {
                 if let questionViewController = navController.topViewController as? QuestionViewController {
                     questionViewController.questions = quizzes[quizID].questions
+                    questionViewController.results = quizzes[quizID].results
                 }
             }
         }

@@ -11,12 +11,15 @@ import UIKit
 class QuestionViewController: UIViewController {
 
     @IBOutlet private var questionLabel: UILabel!
-    @IBOutlet var answerButtons: Array<UIButton>!
+    @IBOutlet private var answerButtons: Array<UIButton>!
     @IBOutlet private var quizProgressView: UIProgressView!
 
     public var questions = [Question]()
+    public var results = [Result]()
 
     private var questionIndex = 0;
+    private var currentAnswers: [Answer] = []
+    private var answerChosen: [String: Int] = [:]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,12 +30,9 @@ class QuestionViewController: UIViewController {
     func updateUI() {
         navigationItem.title = "Question #\(questionIndex + 1)"
 
-        let currentQuestion = questions[questionIndex]
-        var currentAnswers = currentQuestion.answers
-        let quizProgress = Float(questionIndex) / Float(questions.count)
+        questionLabel.text = questions[questionIndex].text
 
-        questionLabel.text = currentQuestion.text
-
+        currentAnswers = questions[questionIndex].answers
         currentAnswers.shuffle()
         for(index, button) in answerButtons.enumerated() {
             if index < currentAnswers.count {
@@ -43,10 +43,14 @@ class QuestionViewController: UIViewController {
             }
         }
 
+        let quizProgress = Float(questionIndex) / Float(questions.count)
         quizProgressView.setProgress(quizProgress, animated: true)
     }
 
     @IBAction func answerButtonTapped(_ sender: UIButton) {
+        let resultID = currentAnswers[sender.tag].type
+        answerChosen[resultID] = answerChosen[resultID] ?? 0 + 1
+
         nextQuestion()
     }
 
