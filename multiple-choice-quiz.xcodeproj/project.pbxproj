@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FF53FF27243C3E92007BE3FE /* multiple-choice-quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "multiple-choice-quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF53FF27243C3E92007BE3FE /* TV Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TV Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF53FF2A243C3E92007BE3FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF53FF2C243C3E92007BE3FE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF53FF2E243C3E92007BE3FE /* QuizPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizPickerViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		FF53FF28243C3E92007BE3FE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FF53FF27243C3E92007BE3FE /* multiple-choice-quiz.app */,
+				FF53FF27243C3E92007BE3FE /* TV Quiz.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,10 +72,10 @@
 				FF69B7EB243CA20B005A1A15 /* QuestionViewController.swift */,
 				FF7CA1BD2440A9E800D853A6 /* ResultsViewController.swift */,
 				FF53FF30243C3E92007BE3FE /* Main.storyboard */,
+				FF53FF35243C3E95007BE3FE /* LaunchScreen.storyboard */,
 				FF69B7ED243CA28F005A1A15 /* QuizData.swift */,
 				FF53FF33243C3E95007BE3FE /* Assets.xcassets */,
 				FF69B7F1243F4D15005A1A15 /* Quizzes */,
-				FF53FF35243C3E95007BE3FE /* LaunchScreen.storyboard */,
 				FF53FF38243C3E95007BE3FE /* Info.plist */,
 			);
 			path = "multiple-choice-quiz";
@@ -107,7 +107,7 @@
 			);
 			name = "multiple-choice-quiz";
 			productName = "multiple-choice-quiz";
-			productReference = FF53FF27243C3E92007BE3FE /* multiple-choice-quiz.app */;
+			productReference = FF53FF27243C3E92007BE3FE /* TV Quiz.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -320,7 +320,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.johrobbins.multiple-choice-quiz";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "TV Quiz";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -338,7 +338,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.johrobbins.multiple-choice-quiz";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "TV Quiz";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
