@@ -63,4 +63,20 @@ class QuestionViewController: UIViewController {
             performSegue(withIdentifier: "ShowResults", sender: nil)
         }
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // find the answer with the most occurrence
+        let answer = answerChosen.max { a, b in a.value < b.value }
+
+        if segue.identifier == "ShowResults" {
+            if let resultsViewController = segue.destination as? ResultsViewController {
+                for result in results {
+                    if result.name == answer?.key {
+                        resultsViewController.result = result
+                        return
+                    }
+                }
+            }
+        }
+    }
 }
