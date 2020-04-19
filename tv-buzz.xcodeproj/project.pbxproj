@@ -50,7 +50,7 @@
 		FF53FF1E243C3E92007BE3FE = {
 			isa = PBXGroup;
 			children = (
-				FF53FF29243C3E92007BE3FE /* multiple-choice-quiz */,
+				FF53FF29243C3E92007BE3FE /* tv-buzz */,
 				FF53FF28243C3E92007BE3FE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +63,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FF53FF29243C3E92007BE3FE /* multiple-choice-quiz */ = {
+		FF53FF29243C3E92007BE3FE /* tv-buzz */ = {
 			isa = PBXGroup;
 			children = (
 				FF53FF2A243C3E92007BE3FE /* AppDelegate.swift */,
@@ -78,7 +78,7 @@
 				FF69B7F1243F4D15005A1A15 /* Quizzes */,
 				FF53FF38243C3E95007BE3FE /* Info.plist */,
 			);
-			path = "multiple-choice-quiz";
+			path = "tv-buzz";
 			sourceTree = "<group>";
 		};
 		FF69B7F1243F4D15005A1A15 /* Quizzes */ = {
@@ -93,9 +93,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FF53FF26243C3E92007BE3FE /* multiple-choice-quiz */ = {
+		FF53FF26243C3E92007BE3FE /* tv-buzz */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FF53FF3B243C3E95007BE3FE /* Build configuration list for PBXNativeTarget "multiple-choice-quiz" */;
+			buildConfigurationList = FF53FF3B243C3E95007BE3FE /* Build configuration list for PBXNativeTarget "tv-buzz" */;
 			buildPhases = (
 				FF53FF23243C3E92007BE3FE /* Sources */,
 				FF53FF24243C3E92007BE3FE /* Frameworks */,
@@ -105,7 +105,7 @@
 			);
 			dependencies = (
 			);
-			name = "multiple-choice-quiz";
+			name = "tv-buzz";
 			productName = "multiple-choice-quiz";
 			productReference = FF53FF27243C3E92007BE3FE /* TV Buzz.app */;
 			productType = "com.apple.product-type.application";
@@ -125,7 +125,7 @@
 					};
 				};
 			};
-			buildConfigurationList = FF53FF22243C3E92007BE3FE /* Build configuration list for PBXProject "multiple-choice-quiz" */;
+			buildConfigurationList = FF53FF22243C3E92007BE3FE /* Build configuration list for PBXProject "tv-buzz" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -138,7 +138,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FF53FF26243C3E92007BE3FE /* multiple-choice-quiz */,
+				FF53FF26243C3E92007BE3FE /* tv-buzz */,
 			);
 		};
 /* End PBXProject section */
@@ -314,12 +314,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ULMFX45DFV;
-				INFOPLIST_FILE = "multiple-choice-quiz/Info.plist";
+				INFOPLIST_FILE = "tv-buzz/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.johrobbins.multiple-choice-quiz";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johrobbins.tv-buzz";
 				PRODUCT_NAME = "TV Buzz";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -332,12 +332,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ULMFX45DFV;
-				INFOPLIST_FILE = "multiple-choice-quiz/Info.plist";
+				INFOPLIST_FILE = "tv-buzz/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.johrobbins.multiple-choice-quiz";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.johrobbins.tv-buzz";
 				PRODUCT_NAME = "TV Buzz";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -347,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FF53FF22243C3E92007BE3FE /* Build configuration list for PBXProject "multiple-choice-quiz" */ = {
+		FF53FF22243C3E92007BE3FE /* Build configuration list for PBXProject "tv-buzz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF53FF39243C3E95007BE3FE /* Debug */,
@@ -356,7 +356,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FF53FF3B243C3E95007BE3FE /* Build configuration list for PBXNativeTarget "multiple-choice-quiz" */ = {
+		FF53FF3B243C3E95007BE3FE /* Build configuration list for PBXNativeTarget "tv-buzz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FF53FF3C243C3E95007BE3FE /* Debug */,

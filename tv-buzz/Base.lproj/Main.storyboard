@@ -11,7 +11,7 @@
         <!--Quiz Picker View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="QuizPickerViewController" customModule="multiple_choice_quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="QuizPickerViewController" customModule="TV_Buzz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,16 +50,16 @@
         <!--Question 1-->
         <scene sceneID="wqw-yb-VRv">
             <objects>
-                <viewController id="adB-rE-nof" customClass="QuestionViewController" customModule="multiple_choice_quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="adB-rE-nof" customClass="QuestionViewController" customModule="TV_Buzz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ggq-8y-OK3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Amu-yV-ajk" userLabel="Answer Stack View">
-                                <rect key="frame" x="30" y="170" width="354" height="930"/>
+                                <rect key="frame" x="30" y="170" width="354" height="540"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfJ-da-muI" userLabel="Option1">
-                                        <rect key="frame" x="0.0" y="0.0" width="354" height="130"/>
+                                        <rect key="frame" x="64.5" y="0.0" width="225" height="65"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Action" backgroundImage="button-outline">
                                             <color key="titleColor" name="text"/>
@@ -69,7 +69,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGN-yv-aSs" userLabel="Option2">
-                                        <rect key="frame" x="0.0" y="160" width="354" height="130"/>
+                                        <rect key="frame" x="64.5" y="95" width="225" height="65"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Romance" backgroundImage="button-outline">
                                             <color key="titleColor" name="text"/>
@@ -79,7 +79,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeS-uF-T33" userLabel="Option3">
-                                        <rect key="frame" x="0.0" y="320" width="354" height="130"/>
+                                        <rect key="frame" x="64.5" y="190" width="225" height="65"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Science Fiction" backgroundImage="button-outline">
                                             <color key="titleColor" name="text"/>
@@ -89,7 +89,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JcA-OX-eaI" userLabel="Option4">
-                                        <rect key="frame" x="0.0" y="480" width="354" height="130"/>
+                                        <rect key="frame" x="64.5" y="285" width="225" height="65"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Drama" backgroundImage="button-outline">
                                             <color key="titleColor" name="text"/>
@@ -99,7 +99,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffQ-dB-66h" userLabel="Option5">
-                                        <rect key="frame" x="0.0" y="640" width="354" height="130"/>
+                                        <rect key="frame" x="64.5" y="380" width="225" height="65"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Comedy" backgroundImage="button-outline">
                                             <color key="titleColor" name="text"/>
@@ -109,7 +109,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aM-WB-oHx" userLabel="Option6">
-                                        <rect key="frame" x="0.0" y="800" width="354" height="130"/>
+                                        <rect key="frame" x="64.5" y="475" width="225" height="65"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                         <state key="normal" title="Horror" backgroundImage="button-outline">
                                             <color key="titleColor" name="text"/>
@@ -171,7 +171,7 @@
         <!--Results-->
         <scene sceneID="tsf-pa-uqS">
             <objects>
-                <viewController id="pmU-0B-8c2" customClass="ResultsViewController" customModule="multiple_choice_quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pmU-0B-8c2" customClass="ResultsViewController" customModule="TV_Buzz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gsi-qb-uSA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
