@@ -1,7 +1,4 @@
 //
-//  QuestionViewController.swift
-//  multiple-choice-quiz
-//
 //  Created by Joh Robbins on 7/4/20.
 //  Copyright © 2020 Joh Robbins. All rights reserved.
 //
@@ -50,8 +47,7 @@ class QuestionViewController: UIViewController {
 
     @IBAction func answerButtonTapped(_ sender: UIButton) {
         let resultID = currentAnswers[sender.tag].type
-        answerChosen[resultID] = answerChosen[resultID] ?? 0 + 1
-
+        answerChosen[resultID] = (answerChosen[resultID] ?? 0) + 1
         nextQuestion()
     }
 
