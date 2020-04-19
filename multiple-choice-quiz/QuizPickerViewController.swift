@@ -13,6 +13,10 @@ class QuizPickerViewController: UIViewController {
 
     private let quizzes = [MovieNight().quiz]
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+      return .lightContent
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
